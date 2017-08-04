@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function People (props = {name: '王五'}) {
+            this.name = props.name;
+        }
+        People.prototype.hello = function () {
+            console.log('Hello!' + this.name)
+        }
+        var aaa = new People({name: '张三'});
+        var bbb = new People();
+        console.log(aaa.name)
+        console.log(bbb.name)
+        aaa.hello()
+        bbb.hello()
+    </script> -->
+    <script>
+        'use strict';
+        class People {
+            constructor(props = {name: '王五'}) {
+                this.name = props.name
+            }
+            hello() {
+                console.log('Hello' + this.name)
+            }
+        }
+        var aaa = new People({name: '张三'});
+        var bbb = new People();
+        console.log(aaa.name)
+        console.log(bbb.name)
+        aaa.hello()
+        bbb.hello()
+    </script>
+</body>
+</html>
