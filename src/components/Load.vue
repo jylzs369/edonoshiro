@@ -1,6 +1,6 @@
 <template>
   <div class="load">
-    <ul>
+    <ul class="record-list">
       <li></li>
       <li></li>
       <li></li>
