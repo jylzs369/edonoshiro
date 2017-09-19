@@ -1,5 +1,8 @@
 <template>
   <div class="initial">
+    <div class="charactor"></div>
+    <div class="name"></div>
+    <div class="gender"></div>
   </div>
 </template>
 
