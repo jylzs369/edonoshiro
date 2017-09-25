@@ -1,9 +1,11 @@
 <template>
   <div class="load">
     <ul class="record-list">
-      <li></li>
-      <li></li>
-      <li></li>
+      <li @click="">
+        <h5>title</h5>
+        <span>time</span>
+        <p>content</p>
+      </li>
     </ul>
   </div>
 </template>
