@@ -1,7 +1,7 @@
 <template>
   <div class="load">
     <ul class="record-list">
-      <li @click="">
+      <li @click="" v-for="record in records">
         <h5>title</h5>
         <span>time</span>
         <p>content</p>
@@ -14,6 +14,7 @@
 export default {
   data () {
     return {
+      records: []
     }
   }
 }
