@@ -4,7 +4,8 @@
     <div class="name">
       <input type="text" value="default" />
     </div>
-    <div class="gender"></div>
+    <div class="gender">
+    </div>
   </div>
 </template>
 
