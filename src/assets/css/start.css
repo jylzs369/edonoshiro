@@ -1,0 +1,17 @@
+header {
+  background: green;
+  height: 10vh;
+}
+
+footer {
+  background: green;
+  height: 15vh;
+}
+
+.menu,
+.load,
+.initial {
+  position: absolute;
+  right: 10vw;
+  bottom: 20vh;
+}
