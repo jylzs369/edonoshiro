@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Initial from '@/components/Initial.vue' 
+import Initial from '@/components/Initial.vue'
 import Load from '@/components/Load.vue'
 
 export default {
@@ -36,4 +36,7 @@ export default {
 </script>
 
 <style scoped>
+  @import '../assets/css/reset.css';
+  @import '../assets/css/base.css';
+  @import '../assets/css/start.css';
 </style>
