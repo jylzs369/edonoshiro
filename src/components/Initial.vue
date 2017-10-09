@@ -14,6 +14,7 @@
 export default {
   data () {
     return {
+      default: '江户城俊介'
     }
   }
 }
