@@ -2,7 +2,7 @@
   <div class="start">
     <header></header>
     <div class="menu">
-      <button @click="load">开始</button>
+      <button class="block" @click="load">开始</button>
       <!-- <button>高分榜</button>-->
     </div>
     <load v-show="loadModal"></load>

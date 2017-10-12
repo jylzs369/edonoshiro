@@ -5,23 +5,24 @@
       存档<span>1/2</span>
       <button class="arrow-right"></button>
     </h2>
-    <p>读取存档</p>
+    <p class="color-blue">读取存档</p>
     <ul class="record-list" v-for="record in records">
       <li v-if="record.title" @click="">
-        <h5><i class="icon icon-auto-save"></i>title</h5>
-        <p><span class="fl">time</span><span class="fr">money</span></p>
+        <h5><i class="icon icon-auto-save"></i>{{ record.title }}</h5>
+        <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
       </li>
       <li v-else>
         <h5><i class="icon icon-auto-save"></i>无存档</h5>
       </li>
       <li v-if="record.title" @click="">
-        <h5><i class="icon icon-save"></i>title</h5>
-        <p><span class="fl">time</span><span class="fr">money</span></p>
+        <h5><i class="icon icon-save"></i>{{ record.title }}</h5>
+        <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
       </li>
       <li v-else @click="newRecord">
         <h5><i class="icon icon-save"></i>空白存档</h5>
       </li>
     </ul>
+    <p class="color-green">请选择</p>
   </div>
 </template>
 
@@ -35,6 +36,15 @@ export default {
   methords: {
     newRecord () {
     }
+  },
+  created () {
+    this.records = [
+      {
+        title: '江户城大院',
+        time: '16年 4月1周',
+        money: '1,300两'
+      }
+    ]
   }
 }
 </script>
