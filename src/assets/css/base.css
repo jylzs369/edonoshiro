@@ -1,9 +1,12 @@
 :root {
-  --dark-bg: #5B3B26;
-  --dark-border: var(--dark-border);
-  --light-border: #7E6745;
-  --blue: #00f;
-  --green: #3F9F00;
+  --bg-dark: #5B3B26;
+  --border-dark: var(--bg-dark);
+  --border-light: #C8A064;
+  --font-blue: #00f;
+  --font-green: #648232;
+  --hover-red: ;
+  --hover-blue: #C8BEDC;
+  --hover-orange: #FEBA17;
 }
 
 body, html {
@@ -68,7 +71,7 @@ button.block {
 .arrow-left::before,
 .arrow-right::before {
   display: inline-block;
-  background: var(--dark-border);
+  background: var(--border-dark);
   width: 4vw;
   height: 4vw;
   line-height: inherit;
@@ -92,8 +95,8 @@ button.block {
   float: right;
 }
 .color-blue {
-  color: var(--blue);
+  color: var(--font-blue);
 }
 .color-green {
-  color: var(--green);
+  color: var(--font-green);
 }
