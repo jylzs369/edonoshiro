@@ -8,14 +8,20 @@
     <p class="color-blue">读取存档</p>
     <ul class="record-list" v-for="record in records">
       <li v-if="record.title" @click="">
-        <h5><i class="icon icon-auto-save"></i>{{ record.title }}</h5>
+        <h5>
+          <i class="icon icon-auto-save"></i>
+          <span>{{ record.title }}</span>
+        </h5>
         <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
       </li>
-      <li v-else>
+      <li v-else @click="newRecord">
         <h5><i class="icon icon-auto-save"></i>无存档</h5>
       </li>
       <li v-if="record.title" @click="">
-        <h5><i class="icon icon-save"></i>{{ record.title }}</h5>
+        <h5>
+          <i class="icon icon-save"></i>
+          <span>{{ record.title }}</span>
+        </h5>
         <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
       </li>
       <li v-else @click="newRecord">
