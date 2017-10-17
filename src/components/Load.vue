@@ -7,7 +7,7 @@
     </h2>
     <p class="color-blue">读取存档</p>
     <ul class="record-list" v-for="record in records">
-      <li v-if="record.title" @click="">
+      <li v-if="record.title" @click="load">
         <h5>
           <i class="icon icon-auto-save"></i>
           <span>{{ record.title }}</span>
@@ -17,7 +17,7 @@
       <li v-else @click="newRecord">
         <h5><i class="icon icon-auto-save"></i>无存档</h5>
       </li>
-      <li v-if="record.title" @click="">
+      <li v-if="record.title" @click="load">
         <h5>
           <i class="icon icon-save"></i>
           <span>{{ record.title }}</span>
@@ -41,6 +41,11 @@ export default {
   },
   methords: {
     newRecord () {
+    },
+    load () {
+      this.$router.replace({
+        name: 'Main'
+      })
     }
   },
   created () {
