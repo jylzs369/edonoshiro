@@ -6,7 +6,7 @@
       <button class="arrow-right"></button>
     </h2>
     <p class="color-blue">读取存档</p>
-    <ul class="record-list" v-for="record in records">
+    <ul class="record-list" v-for="(record, index) in records" :key="index">
       <li v-if="record.title" @click="load">
         <h5>
           <i class="icon icon-auto-save"></i>
