@@ -5,7 +5,8 @@
       <input type="text" value="default" />
     </div>
     <div class="gender">
-    
+      <span>男</span>
+      <span>女</span>
     </div>
   </div>
 </template>
