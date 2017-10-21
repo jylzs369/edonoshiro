@@ -1,6 +1,8 @@
 <template>
   <div class="initial">
-    <div class="charactor"></div>
+    <div class="charactor">
+      <img src="" alt="">
+    </div>
     <div class="name">
       <input type="text" value="default" />
     </div>
