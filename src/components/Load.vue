@@ -41,6 +41,7 @@ export default {
   },
   methords: {
     newRecord () {
+      this.initialModal = true
     },
     load () {
       this.$router.replace({
