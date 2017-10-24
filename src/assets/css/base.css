@@ -100,3 +100,36 @@ button.block {
 .color-green {
   color: var(--font-green);
 }
+
+.tab-nav {
+  border: 1px solid var(--border-dark);
+  border-bottom: 1px solid #F9F0B9;
+  background: #F9F0B9;
+}
+.tab-nav h2 {
+  background: var(--bg-dark);
+  color: #fff;
+  line-height: 1.8;
+  margin: 2px;
+  padding: 0 4vw;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 2px 0 #000;
+}
+.tab-nav h2 button {
+  margin-top: 1.2vh;
+}
+.tab-content {
+  position: relative;
+  border: 1px solid var(--border-dark);
+  border-top: 0;
+  background: #F9F0B9;
+  overflow: hidden;
+}
+.tab-content > * {
+  position: absolute;
+  z-index: -1;
+}
+
+.tab-content > .current-tab {
+  z-index: 1;
+}
