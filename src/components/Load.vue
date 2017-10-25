@@ -57,8 +57,14 @@ export default {
       })
     },
     leftTabClick () {
+      if (this.currentRecord > 1) {
+        this.currentRecord--
+      }
     },
     rightTabClick () {
+      if (this.currentRecord < this.records.length) {
+        this.currentRecord++
+      }
     }
   },
   created () {
