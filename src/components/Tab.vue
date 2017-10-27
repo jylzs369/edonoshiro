@@ -3,7 +3,7 @@
     <div class="tab-nav">
       <h2>
         <button class="arrow-left" @click="leftTabClick"></button>
-        {{ title }}<span v-if="page">{{ currTab }}/{{ totalTab }}</span>
+        {{ title }} <span v-if="page">{{ currTab }}/{{ totalTab }}</span>
         <button class="arrow-right" @click="rightTabClick"></button>
       </h2>
     </div>
