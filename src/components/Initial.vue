@@ -10,6 +10,7 @@
       <span>男</span>
       <span>女</span>
     </div>
+    <div class="map"></div>
   </div>
 </template>
 
