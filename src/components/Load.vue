@@ -1,31 +1,29 @@
 <template>
   <div class="load">
     <tab :title="tab.title" :page="tab.page" :totalTab="tab.totalTab" @leftTabClick="leftTabClick" @rightTabClick="rightTabClick"></tab>
-    <div class="tab-content">
-        <p class="color-blue">读取存档</p>
-        <ul class="record-list" v-for="(record, index) in records" :key="index" v-show="currentRecord - 1 === index">
-          <li v-if="record.title" @click="load">
-            <h5>
-              <i class="icon icon-auto-save"></i>
-              <span>{{ record.title }}</span>
-            </h5>
-            <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
-          </li>
-          <li v-else @click="newRecord">
-            <h5><i class="icon icon-auto-save"></i>无存档</h5>
-          </li>
-          <li v-if="record.title" @click="load">
-            <h5>
-              <i class="icon icon-save"></i>
-              <span>{{ record.title }}</span>
-            </h5>
-            <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
-          </li>
-          <li v-else @click="newRecord">
-            <h5><i class="icon icon-save"></i>空白存档</h5>
-          </li>
-        </ul>
-        <p class="color-green">请选择</p>
+    <div class="tab-content-wrap">
+      <ul class="tab-content record-list" v-for="(record, index) in records" :key="index" v-show="currentRecord - 1 === index">
+        <li v-if="record.title" @click="load">
+          <h5>
+            <i class="icon icon-auto-save"></i>
+            <span>{{ record.title }}</span>
+          </h5>
+          <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
+        </li>
+        <li v-else @click="newRecord">
+          <h5><i class="icon icon-auto-save"></i>无存档</h5>
+        </li>
+        <li v-if="record.title" @click="load">
+          <h5>
+            <i class="icon icon-save"></i>
+            <span>{{ record.title }}</span>
+          </h5>
+          <p><span class="fl">{{ record.time }}</span><span class="fr">{{ record.money }}</span></p>
+        </li>
+        <li v-else @click="newRecord">
+          <h5><i class="icon icon-save"></i>空白存档</h5>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -47,7 +45,7 @@ export default {
       }
     }
   },
-  methords: {
+  methods: {
     newRecord () {
       this.initialModal = true
     },
@@ -58,6 +56,7 @@ export default {
     },
     leftTabClick () {
       if (this.currentRecord > 1) {
+        console.log(this.currentRecord)
         this.currentRecord--
       }
     },
