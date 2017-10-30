@@ -118,18 +118,15 @@ button.block {
 .tab-nav h2 button {
   margin-top: 1.2vh;
 }
-.tab-content {
-  position: relative;
+.tab-content-wrap {
+  background: #F9F0B9;
   border: 1px solid var(--border-dark);
   border-top: 0;
   background: #F9F0B9;
   overflow: hidden;
 }
-.tab-content > * {
-  position: absolute;
-  z-index: -1;
-}
-
-.tab-content > .current-tab {
+.tab-content {
+  position: relative;
+  width: 100%;
   z-index: 1;
 }

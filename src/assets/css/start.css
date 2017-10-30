@@ -43,8 +43,21 @@ footer {
   clear: both;
 }
 
-.load .records > p {
+.load .tab-content-wrap > p {
   margin: 1vh 0;
+}
+.tab-content-wrap::before,
+.tab-content-wrap::after {
+  display: block;
+  margin: 1vh 0;
+}
+.tab-content-wrap::before {
+  content: '读取存档';
+  color: var(--font-blue);
+}
+.tab-content-wrap::after {
+  content: '请选择';
+  color: var(--font-green);
 }
 .load .record-list li {
   border: 1px solid var(--border-light);
