@@ -1,6 +1,6 @@
 :root {
   --bg-dark: #5B3B26;
-  --border-dark: var(--bg-dark);
+  --border-dark: #5B3B26;
   --border-light: #C8A064;
   --font-blue: #00f;
   --font-green: #648232;
@@ -107,7 +107,7 @@ button.block {
   background: #F9F0B9;
 }
 .tab-nav h2 {
-  background: var(--bg-dark);
+  background: #5B3B26;
   color: #fff;
   line-height: 1.8;
   margin: 2px;
@@ -119,7 +119,6 @@ button.block {
   margin-top: 1.2vh;
 }
 .tab-content-wrap {
-  background: #F9F0B9;
   border: 1px solid var(--border-dark);
   border-top: 0;
   background: #F9F0B9;
