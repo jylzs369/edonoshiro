@@ -31,7 +31,7 @@ export default {
     load () {
       this.loadModal = true
     },
-    viewScore () }
+    viewScore () {}
   }
 }
 </script>
