@@ -10,7 +10,9 @@
       <span>男</span>
       <span>女</span>
     </div>
-    <div class="map"></div>
+    <div class="map">
+      <tab :title="tab.title" :page="tab.page" :totalTab="tab.totalTab" @leftTabClick="leftTabClick" @rightTabClick="rightTabClick"></tab>
+    </div>
   </div>
 </template>
 
