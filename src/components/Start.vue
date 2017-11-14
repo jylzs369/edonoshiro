@@ -3,7 +3,7 @@
     <header></header>
     <div class="menu">
       <button class="block" @click="load">开始</button>
-      <button @click=“viewScore”>高分榜</button>
+      <button @click="viewScore">高分榜</button>
     </div>
     <load v-show="loadModal"></load>
     <initial v-show="initialModal"></initial>
