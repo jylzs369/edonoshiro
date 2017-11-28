@@ -28,7 +28,7 @@ footer {
 }
 
 .menu button:hover {
-  background: var(--hover-orange);
+  background: #FEBA17;
 }
 
 .load {
@@ -71,5 +71,5 @@ footer {
   width: 60%;
 }
 .load h5 span:hover {
-  background: var(--hover-blue);
+  background: #C8BEDC;
 }
