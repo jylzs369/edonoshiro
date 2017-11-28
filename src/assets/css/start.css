@@ -53,14 +53,14 @@ footer {
 }
 .tab-content-wrap::before {
   content: '读取存档';
-  color: var(--font-blue);
+  color: #00f;
 }
 .tab-content-wrap::after {
   content: '请选择';
-  color: var(--font-green);
+  color: #648232;
 }
 .load .record-list li {
-  border: 1px solid var(--border-light);
+  border: 1px solid #C8A064;
   margin: 1vh 4vw;
   overflow: hidden;
   padding: 1vh;
