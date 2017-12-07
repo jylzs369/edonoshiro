@@ -12,7 +12,7 @@
     </div>
     <div class="map">
       <tab :title="tab.title" :page="tab.page" :totalTab="tab.totalTab" @leftTabClick="leftTabClick" @rightTabClick="rightTabClick"></tab>
-      <div class="tab-content"> </div>
+      <div class="tab-content"></div>
     </div>
   </div>
 </template>
