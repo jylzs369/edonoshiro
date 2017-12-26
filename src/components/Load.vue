@@ -56,7 +56,6 @@ export default {
     },
     leftTabClick () {
       if (this.currentRecord > 1) {
-        console.log(this.currentRecord)
         this.currentRecord--
       }
     },
