@@ -7,7 +7,7 @@
       <input type="text" value="default" />
     </div>
     <div class="gender">
-      <span>男</span>
+      <span class="selected">男</span>
       <span>女</span>
     </div>
     <div class="map">
