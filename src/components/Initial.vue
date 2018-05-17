@@ -21,7 +21,8 @@
 export default {
   data () {
     return {
-      default: '江户城俊介'
+      default: '江户城俊介',
+      gender: 'male'
     }
   }
 }
