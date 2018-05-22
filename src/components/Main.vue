@@ -4,7 +4,6 @@
 </template>
 
 <script>
-import job from '@/assets/js/job'
 export default {
   name: 'main',
   data () {
