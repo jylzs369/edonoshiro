@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   @import '../assets/css/reset.css';
   @import '../assets/css/base.css';
   @import '../assets/css/main.css';
