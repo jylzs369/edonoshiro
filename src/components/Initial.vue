@@ -22,7 +22,9 @@ export default {
   data () {
     return {
       default: '江户城俊介',
-      gender: 'male'
+      gender: 'male',
+      job: '农民',
+      jobType: 'farm'
     }
   }
 }
